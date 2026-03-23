@@ -14,7 +14,7 @@ Accent : #22C55E
 Radius : 8px
 
 # Logotipo 
-https://ui-avatars.com/api/?background=369A1&color=082F49&name=Diogo+Pedroso
+[LogoTipo](https://ui-avatars.com/api/?background=369A1&color=082F49&name=Diogo+Pedroso)
 
 # Nome RM
 Diogo Pedroso Alves
