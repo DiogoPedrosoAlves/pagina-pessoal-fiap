@@ -1,0 +1,124 @@
+:root{
+    --primary-color: #0369A1;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F0F9FF;
+    color: #082F49;
+}
+
+div {
+    width: 70%;
+    margin: auto;
+    padding: 15px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-bottom: 2px solid #0369A1;
+    border-spacing: 100px;
+    padding: 15px;
+    
+}
+
+header img {
+    width: 60px;
+    border-radius: 50%;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #082F49;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #0369A1;
+}
+
+section {
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+h2, h3, h4 {
+    margin-bottom: 10px;
+}
+
+a[href="#"] {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #0369A1;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+#sobre-explicativo {
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    padding: 15px;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+#tecnologias li {
+    margin-bottom: 5px;
+}
+
+table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #0369A1;
+    color: white;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+#contato a {
+    color: #0369A1;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: white;
+    border-top: 2px solid #0369A1;
+}
+
+main {
+    width: 50%;
+    margin: auto;
+}
