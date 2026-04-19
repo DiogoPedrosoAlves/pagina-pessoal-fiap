@@ -13,6 +13,12 @@ body {
     color: #082F49;
 }
 
+main {
+    width: 50%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
 div {
     width: 70%;
     margin: auto;
@@ -106,8 +112,56 @@ th, td {
     padding: 8px;
 }
 
-#contato a {
-    color: #0369A1;
+.contato a {
+    text-decoration: none;
+    color: #082F49;
+    font-weight: bold;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.contato {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    margin-top: 10px;
+    flex: 1;
+}
+
+#contato-wrapper {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: transparent;
+}
+
+#redes-sociais li {
+    background-color: #F472B6;
+    color: white;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #0369A1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+input, textarea {
+    width: 100%;              
+    padding: 10px;           
+    border: 2px solid #ccc;   
+    border-radius: 5px;       
+    box-sizing: border-box;
+    box-shadow:#082F49 2px 3px 6px;
 }
 
 footer {
@@ -118,7 +172,3 @@ footer {
     border-top: 2px solid #0369A1;
 }
 
-main {
-    width: 50%;
-    margin: auto;
-}

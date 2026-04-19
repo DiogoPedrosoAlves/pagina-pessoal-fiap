@@ -70,7 +70,7 @@
                         <li>Comunicativo</li>
                     </ul>
                 </article>
-
+                <br>
                 <article>
                     <h4>Hard Skills</h4>
                     <ul>
@@ -141,28 +141,48 @@
                 </article>
             </div>
         </section>
-
-        <section id="contato">
+    <section id="contato-wrapper">
+    <section class="contato">
             <div>
-                <h3>Contato (Em breve)</h3>
+                <h3>Contato</h3>
+                <article>
+                    <form action="/enviar-dados" method="post">
+                        <label for="nome">Nome:</label><br>
+                        <input type="text" id="nome" name="nome" placeholder="Seu Nome Completo" required>
+                        <br><br>
 
+                        <label for="email">E-mail:</label><br>
+                        <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                        <br><br>
+
+                        <label for="mensagem">Mensagem:</label><br>
+                        <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" required></textarea>
+                        <br><br>
+
+                        <button type="submit">Enviar</button>
+                    </form>
+                </article>
+                
+            </div>
+            </section>
+            <section class="contato">
+            <div style="width: 100%;">
                 <article>
                     <h4>E-mail</h4>
-                    <p><a href="mailto:dpedroso_alves28@gmail.com">dpedroso_alves28@gmail.com</a></p>
-                </article>
-
-                <article>
+                    <p>dpedroso.alves28@gmail.com</p><br>
                     <h4>Redes Sociais</h4>
-                    <ul>
+                    <nav>
+                        <ul id="redes-sociais">
                         <li><a href="https://br.linkedin.com/in/diogo-pedroso-alves-895346237">LinkedIn</a></li>
                         <li><a href="https://github.com/DiogoPedrosoAlves">GitHub</a></li>
                         <li><a href="https://www.instagram.com/diogoo_pedroso/">Instagram</a></li>
                     </ul>
+                    </nav>
                 </article>
             </div>
         </section>
+    </section>
     </main>
-
     <footer>
         <div>
             <p>© 2026 Diogo Pedroso. Todos os direitos reservados.</p>
