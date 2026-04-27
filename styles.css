@@ -48,7 +48,7 @@ a[href="#"] {
 /* Sobre Mim */
 .sobre-container {
   display: flex;
-  flex-direction: row; /* desktop: texto à esquerda, imagem à direita */
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
@@ -98,7 +98,7 @@ th, td {
 
 #contato-wrapper {
   display: flex;
-  flex-direction: row;   /* coloca contato e email/redes sociais lado a lado */
+  flex-direction: row;
   justify-content: space-between;
   gap: 2rem;
   background-color: transparent;
@@ -107,7 +107,7 @@ th, td {
 
 #contato-wrapper {
   display: flex;
-  flex-direction: row;   /* coloca contato e email/redes sociais lado a lado */
+  flex-direction: row;
   justify-content: space-between;
   gap: 2rem;
   background-color: transparent;
@@ -155,7 +155,7 @@ th, td {
   }
 
   .sobre-container {
-    flex-direction: column; /* mobile: imagem abaixo do texto */
+    flex-direction: column;
     text-align: center;
   }
 
