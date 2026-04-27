@@ -1,0 +1,18 @@
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+input, textarea {
+  width: 100%;              
+  padding: 10px;           
+  border: 2px solid #ccc;   
+  border-radius: 5px;       
+  box-sizing: border-box;
+  box-shadow: #082F49 2px 3px 6px;
+}
