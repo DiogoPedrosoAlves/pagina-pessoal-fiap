@@ -3,68 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="variavel.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="form.css">
 
-    
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/variavel.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/form.css">
+
     <title>Portfólio Diogo Pedroso</title>
 </head>
+
 <body>
     <header>
-            <img src="https://ui-avatars.com/api/?background=0369A1&color=082F49&name=Diogo+Pedroso" alt="Diogo Pedroso">
-            <nav>
-                <ul>
-                    <li><a href="#sobre">Sobre Mim</a></li>
-                    <li><a href="#objetivo">Objetivo Profissional</a></li>
-                    <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#tecnologias">Tecnologias</a></li>
-                    <li><a href="#formacao">Formação</a></li>
-                    <li><a href="#experiencia">Experiência</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-                </nav>
-    </header>
+        <img src="https://ui-avatars.com/api/?background=0369A1&color=082F49&name=Diogo+Pedroso" alt="Diogo Pedroso">
 
+        <div class="logo">DP Portfolio</div>
+        <button id="menu-btn" style="margin-left: 1200px;">☰</button>
+        <nav id="sidebar">
+            <ul>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#objetivo">Objetivo Profissional</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#experiencia">Experiência</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <section id="sobre">
-            <div>
+            <div class="container">
                 <h2>Diogo Pedroso</h2>
                 <p>Aluno da FIAP — Análise e Desenvolvimento de Sistemas</p>
                 <a href="#">Ver Currículo</a>
             </div>
         </section>
-
         <section id="sobre-explicativo">
             <div class="sobre-container">
                 <div>
-                <h3>Sobre Mim</h3>
-                <p id="p-Sobre-Mim">
-                Olá! Meu nome é Diogo Pedroso, e sou aluno da FIAP no curso de Análise e Desenvolvimento de Sistemas. 
-                Tenho paixão por tecnologia e gosto de resolver problemas com código. 
-                Além disso, gosto de tocar instrumentos como violão e piano.
-                </p>
+                    <h3>Sobre Mim</h3>
+                    <p>
+                        Olá! Meu nome é Diogo Pedroso, e sou aluno da FIAP no curso de Análise e Desenvolvimento de Sistemas.
+                        Tenho paixão por tecnologia e gosto de resolver problemas com código.
+                        Além disso, gosto de tocar instrumentos como violão e piano.
+                    </p>
                 </div>
-            <img src="./minhafoto.jpeg" alt="Foto de Diogo Pedroso" width="200px">
-        </div>
+                <img src="imgs/minhafoto.jpeg" alt="Foto de Diogo Pedroso">
+            </div>
         </section>
         <section id="objetivo">
-            <div>
+            <div class="container">
                 <h3>Objetivo Profissional</h3>
                 <p>
-                    Busco uma oportunidade na área de tecnologia para aplicar meus conhecimentos e contribuir com o crescimento da empresa. 
+                    Busco uma oportunidade na área de tecnologia para aplicar meus conhecimentos e contribuir com o crescimento da empresa.
                     Meu objetivo é me tornar um programador experiente e participar de projetos inovadores.
                 </p>
             </div>
         </section>
-
         <section id="habilidades">
-            <div>
+            <div class="container">
                 <h3>Habilidades</h3>
-                
                 <article>
                     <h4>Soft Skills</h4>
                     <ul>
@@ -91,7 +90,7 @@
         </section>
 
         <section id="tecnologias">
-            <div>
+            <div class="container">
                 <h3>Tecnologias</h3>
                 <ul>
                     <li>HTML</li>
@@ -105,7 +104,7 @@
         </section>
 
         <section id="formacao">
-            <div>
+            <div class="container">
                 <h3>Formação</h3>
                 <table>
                     <thead>
@@ -129,7 +128,7 @@
         </section>
 
         <section id="experiencia">
-            <div>
+            <div class="container">
                 <h3>Experiência</h3>
                 <article>
                     <h4>Em desenvolvimento</h4>
@@ -139,7 +138,7 @@
         </section>
 
         <section id="projetos">
-            <div>
+            <div class="container">
                 <h3>Projetos</h3>
                 <article>
                     <h4>Em breve</h4>
@@ -147,52 +146,46 @@
                 </article>
             </div>
         </section>
-    <section id="contato-wrapper">
-    <section class="contato">
-            <div>
-                <h3>Contato</h3>
-                <article>
-                    <form action="/enviar-dados" method="post">
-                        <label for="nome">Nome:</label><br>
-                        <input type="text" id="nome" name="nome" placeholder="Seu Nome Completo" required>
-                        <br><br>
 
-                        <label for="email">E-mail:</label><br>
-                        <input type="email" id="email" name="email" required placeholder="seu@email.com">
-                        <br><br>
-
-                        <label for="mensagem">Mensagem:</label><br>
-                        <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" required></textarea>
-                        <br><br>
-
+        <section id="contato-wrapper">
+            <section class="contato">
+                <div>
+                    <h3>Contato</h3>
+                    <form>
+                        <input type="text" placeholder="Nome" required>
+                        <input type="email" placeholder="Email" required>
+                        <textarea placeholder="Mensagem" required></textarea>
                         <button type="submit">Enviar</button>
                     </form>
-                </article>
-                
-            </div>
+                </div>
             </section>
+
             <section class="contato">
-            <div style="width: 100%;">
-                <article>
+                <div>
                     <h4>E-mail</h4>
-                    <p>dpedroso.alves28@gmail.com</p><br>
+                    <p>dpedroso.alves28@gmail.com</p>
+
                     <h4>Redes Sociais</h4>
-                    <nav>
-                        <ul id="redes-sociais">
-                        <li><a href="https://br.linkedin.com/in/diogo-pedroso-alves-895346237">LinkedIn</a></li>
-                        <li><a href="https://github.com/DiogoPedrosoAlves">GitHub</a></li>
-                        <li><a href="https://www.instagram.com/diogoo_pedroso/">Instagram</a></li>
+                    <ul id="redes-sociais">
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">Instagram</a></li>
                     </ul>
-                    </nav>
-                </article>
-            </div>
+                </div>
+            </section>
         </section>
-    </section>
+
+        <!-- botão voltar -->
+        <nav>
+            <a href="#" style="font-size: 40px;">↑</a>
+        </nav>
     </main>
+
     <footer>
-        <div>
-            <p>© 2026 Diogo Pedroso. Todos os direitos reservados.</p>
-        </div>
+        <p>© 2026 Diogo Pedroso</p>
     </footer>
+
+    <!-- ✅ JS no lugar certo -->
+    <script src="JS/script.js"></script>
 </body>
 </html>

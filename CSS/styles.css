@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* ================= BODY ================= */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--color-text);
+  word-wrap: break-word;
+}
+
+/* ================= HEADER ================= */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--background-color);
+  padding: 10px 20px;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+/* ================= MAIN ================= */
+main {
+  width: 50%;
+  margin: auto;
+  display: flex;              /* ✅ corrigido */
+  flex-direction: column;     /* ✅ corrigido */
+  flex-wrap: wrap;
+}
+
+/* ================= CONTAINER (substitui div global) ================= */
+.container {
+  width: 70%;
+  margin: auto;
+  padding: 15px;
+}
+
+/* ================= SECTION ================= */
+section {
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 8px;
+  padding: 20px;
+  width: 90%;
+}
+
+/* ================= TEXTOS ================= */
+h2, h3, h4 {
+  margin-bottom: 10px;
+}
+
+a[href="#"] {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 8px;
+}
+
+/* ================= SOBRE ================= */
+.sobre-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.sobre-container img {
+  width: 200px;
+  border-radius: 8px;
+}
+
+/* ================= LISTAS ================= */
+ul {
+  margin-left: 20px;
+}
+
+#tecnologias li {
+  margin-bottom: 5px;
+}
+
+/* ================= HABILIDADES ================= */
+.habilidades-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* ================= TABELA ================= */
+table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+/* ================= CONTATO ================= */
+.contato a {
+  text-decoration: none;
+  color: #082F49;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#contato-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+  background-color: transparent;
+  height: auto;
+}
+
+.contato {
+  flex: 1;
+  width: auto;
+  margin-top: 10px;
+}
+
+#redes-sociais li {
+  background-color: #F472B6;
+  color: white;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+/* ================= SIDEBAR ================= */
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: white;
+  border-right: 2px solid var(--primary-color);
+  transition: left 0.3s ease; /* ✅ corrigido */
+  padding-top: 60px;
+  z-index: 1000;
+}
+
+#sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+#sidebar li {
+  margin: 15px 0;
+}
+
+#sidebar a {
+  color: var(--secondary-color);
+  font-weight: bold;
+  padding: 10px 20px;
+  display: block;
+}
+
+#sidebar a:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+#sidebar.active {
+  left: 0;
+}
+
+/* ================= RESPONSIVIDADE ================= */
+@media (max-width: 768px) {
+
+  main {
+    width: 90%;
+  }
+
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sobre-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .habilidades-grid {
+    flex-direction: column;
+  }
+
+  .contato {
+    width: 100%;
+    height: auto;
+  }
+
+  #contato-wrapper {
+    flex-direction: column;
+  }
+}
