@@ -5,7 +5,6 @@
   text-decoration: none;
 }
 
-/* ================= BODY ================= */
 body {
   font-family: Arial, sans-serif;
   background-color: var(--background-color);
@@ -13,7 +12,6 @@ body {
   word-wrap: break-word;
 }
 
-/* ================= HEADER ================= */
 header {
   display: flex;
   justify-content: space-between;
@@ -23,23 +21,20 @@ header {
   border-bottom: 2px solid var(--primary-color);
 }
 
-/* ================= MAIN ================= */
 main {
   width: 50%;
   margin: auto;
-  display: flex;              /* ✅ corrigido */
-  flex-direction: column;     /* ✅ corrigido */
+  display: flex;              
+  flex-direction: column;     
   flex-wrap: wrap;
 }
 
-/* ================= CONTAINER (substitui div global) ================= */
 .container {
   width: 70%;
   margin: auto;
   padding: 15px;
 }
 
-/* ================= SECTION ================= */
 section {
   background-color: white;
   margin-top: 20px;
@@ -48,7 +43,6 @@ section {
   width: 90%;
 }
 
-/* ================= TEXTOS ================= */
 h2, h3, h4 {
   margin-bottom: 10px;
 }
@@ -62,7 +56,6 @@ a[href="#"] {
   border-radius: 8px;
 }
 
-/* ================= SOBRE ================= */
 .sobre-container {
   display: flex;
   flex-direction: row;
@@ -76,7 +69,6 @@ a[href="#"] {
   border-radius: 8px;
 }
 
-/* ================= LISTAS ================= */
 ul {
   margin-left: 20px;
 }
@@ -85,14 +77,12 @@ ul {
   margin-bottom: 5px;
 }
 
-/* ================= HABILIDADES ================= */
 .habilidades-grid {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
 }
 
-/* ================= TABELA ================= */
 table {
   width: 100%;
   margin-top: 10px;
@@ -109,7 +99,6 @@ th, td {
   padding: 8px;
 }
 
-/* ================= CONTATO ================= */
 .contato a {
   text-decoration: none;
   color: #082F49;
@@ -133,14 +122,12 @@ th, td {
 }
 
 #redes-sociais li {
-  background-color: #F472B6;
   color: white;
   padding: 5px;
   margin-bottom: 5px;
   border-radius: 10px;
 }
 
-/* ================= SIDEBAR ================= */
 #sidebar {
   position: fixed;
   top: 0;
@@ -149,7 +136,7 @@ th, td {
   height: 100%;
   background: white;
   border-right: 2px solid var(--primary-color);
-  transition: left 0.3s ease; /* ✅ corrigido */
+  transition: left 0.3s ease; 
   padding-top: 60px;
   z-index: 1000;
 }
@@ -179,7 +166,6 @@ th, td {
   left: 0;
 }
 
-/* ================= RESPONSIVIDADE ================= */
 @media (max-width: 768px) {
 
   main {
