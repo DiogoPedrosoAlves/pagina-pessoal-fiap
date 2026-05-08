@@ -1,29 +1,41 @@
-const menuBtn = document.getElementById('menu-btn');
-const sidebar = document.getElementById('sidebar');
+// Seleciona o formulário
+const form = document.querySelector("form");
 
-menuBtn.addEventListener('click', () => {
-  sidebar.classList.toggle('active');
-});
+// Cria elemento para mensagens
+const messageBox = document.createElement("div");
+form.parentNode.appendChild(messageBox);
 
-// Accordion
-const accBtns = document.querySelectorAll('.accordion-btn');
-accBtns.forEach(btn => {
-  btn.addEventListener('click', () => {
-    const content = btn.nextElementSibling;
-    if (content.style.display === 'block') {
-      content.style.display = 'none';
-    } else {
-      document.querySelectorAll('.accordion-content').forEach(c => c.style.display = 'none');
-      content.style.display = 'block';
-    }
-  });
-});
-
-const backToTop = document.getElementById('back-to-top');
-backToTop.addEventListener('click', (e) => {
+form.addEventListener("submit", (e) => {
   e.preventDefault();
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
+
+  const nome = form.nome.value.trim();
+  const email = form.email.value.trim();
+  const mensagem = form.mensagem.value.trim();
+
+  let errors = [];
+
+  if (nome.length < 3) {
+    errors.push("O nome deve ter pelo menos 3 caracteres.");
+  }
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    errors.push("Formato de e-mail inválido.");
+  }
+
+  if (mensagem.length < 10) {
+    errors.push("A mensagem deve ter pelo menos 10 caracteres.");
+  }
+
+  if (errors.length > 0) {
+    messageBox.innerHTML = `<p style="color:red;">${errors.join("<br>")}</p>`;
+  } else {
+    messageBox.innerHTML = `<p style="color:green;">Formulário enviado com sucesso!</p>`;
+
+    console.log("Dados enviados:");
+    console.log({ nome, email, mensagem });
+
+    // Reseta formulário
+    form.reset();
+  }
 });
