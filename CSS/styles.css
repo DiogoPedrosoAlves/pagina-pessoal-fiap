@@ -21,6 +21,21 @@ header {
   border-bottom: 2px solid var(--primary-color);
 }
 
+header nav {
+  display: block;
+}
+
+#menu-btn {
+  display: none;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
 main {
   width: 50%;
   margin: auto;
@@ -41,6 +56,7 @@ section {
   border-radius: 8px;
   padding: 20px;
   width: 90%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 h2, h3, h4 {
@@ -54,6 +70,11 @@ a[href="#"] {
   background-color: var(--primary-color);
   color: white;
   border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+a[href="#"]:hover {
+  background-color: var(--secondary-color);
 }
 
 .sobre-container {
@@ -136,7 +157,7 @@ th, td {
   height: 100%;
   background: white;
   border-right: 2px solid var(--primary-color);
-  transition: left 0.3s ease; /* ✅ corrigido */
+  transition: left 0.3s ease;
   padding-top: 60px;
   z-index: 1000;
 }
@@ -166,8 +187,48 @@ th, td {
   left: 0;
 }
 
-@media (max-width: 768px) {
+.accordion-btn {
+  background: var(--primary-color);
+  color: white;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  margin-top: 5px;
+  border-radius: 5px;
+}
 
+.accordion-btn:hover {
+  background: var(--secondary-color);
+}
+
+.accordion-content {
+  display: none;
+  padding: 10px;
+  background: #f9f9f9;
+  border-radius: 5px;
+}
+
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 30px;
+  background: var(--primary-color);
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+#back-to-top:hover {
+  background: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
   main {
     width: 90%;
   }
@@ -183,7 +244,7 @@ th, td {
   }
 
   header {
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
   }
 
@@ -208,5 +269,13 @@ th, td {
 
   #contato-wrapper {
     flex-direction: column;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  #menu-btn {
+    display: block;
   }
 }
